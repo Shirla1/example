@@ -1,0 +1,112 @@
+<style>
+    /*this is used to write comments in CSS jo ne HTML */
+    .subscribe-button {
+        background-color: rgb(200, 0, 0);
+        color:white; 
+        border: none;
+        height: 36px;
+        width: 105px;
+        border-radius: 2px ;
+        cursor: pointer;
+        /*?po nqs duam qe the button te jete poshte atehre cfare coding eshte ?*/
+        transition:opacity 0.15s ;
+        margin-right: 8px; /*per hapesire midis the buttons */
+        margin-left: 20px;
+        /*Lesson 4 */
+        vertical-align: top; /*per te vendosur te gjitha  buttons to be placed in the top.
+        Ose e vondosim kete code ne cdo button qe to be aligned in the top ose bejme nje new class
+        for all the buttons . Pra : */
+    }
+    button{
+        vertical-align: top;    
+    }
+    /*Lesson 3 - hover style */
+
+   /* .subscribe-button:hover {
+        background-color: greenyellow;
+    }
+
+    .subscribe-button:active{
+        background-color:blueviolet ;
+    }
+    */
+    .subscribe-button:hover{
+        opacity: 0.7;
+
+    }
+    .subscribe-button:active{
+        opacity: 0.3;
+    }
+
+
+    .join-button:hover {
+      background-color:rgba(41, 118, 218, 211) ;  
+      color:white ;
+      cursor: alias; /* kjo meret dhe codi per cursor ne join button nuk meret */
+      /*nqs e vendosim ketu atehere this transison is applied vetem kur hover over the button dhe si rrjedhoje kur e heqim mausin nga the button the style changes imediately*/
+     transition:background-color 3s,
+      color 3s;
+     
+    }   
+    .join-button:active {
+      opacity: 0.7;  
+      /*nqs e vendosim kety atehere kur e heqim mausin atehere the style changes not imediately */
+      transition:background-color 3s,
+      color 3s;
+    }
+
+    .join-button {
+     background-color: white;
+     border-color:rgba(41, 118, 218, 211) ; 
+     border-style: solid; 
+     border-width:1px;
+     color:rgba(41, 118, 218, 211) ; 
+    /*height: 36px;
+     width: 62px; */
+     border-radius: 2px;
+     cursor: pointer; 
+      /*---Lesson 3 -----*/
+     /*nqs e vendosim ketu atehere this transison is applied kur hover over the button dhe  kur e heqim mausin nga the button dhe si rrjedhpje the style doesn't changes imediately  */ 
+     /*transition:background-color 3s,
+      color 3s;
+      */
+     /*-----Lesson 5----- */
+     padding-left: 30px;
+     padding-top: 20px;
+    }
+    
+.tweet-button{
+    background-color:rgba(2, 137, 255);
+    color:white;
+    border: none;
+    height: 36px;
+    width: 70px;
+    border-radius: 18px;
+    font-weight: bold;  /* --te ndryshon forment e text ta besh thick or not */
+    font-size: 15px; /*--ndryshon the size of the tex t*/
+    cursor:pointer ;
+    /*---Lesson 3 -----*/
+   /* box-shadow: 5px 3px 10px rgba(0, 0, 0, 1) ; */ /*a- ketu tregon how see through the color is  */
+    /*kodi me siper ben te mundur qe the shodow te jete gjata gjithe kohes*/
+    /*qe te shodow te duket vetem kur hove over it atehere kodin me siper e shruajme ne nje new class pra : */
+    /*por sigurohem qe the code upstairs ta bej ne formen e comment se ndryshon kodi me poshte doesnt work madje as kodi me siper doesnt work*/
+    /*qe the transision to the shadow to be not very fast : */
+    transition: box-shadow 3s;
+}
+    .tweet-button:hover {
+        box-shadow: 5px 3px 10px rgba(0, 0, 0, 1) ;
+  }
+   
+    
+
+    
+    
+</style>
+
+
+<button class="subscribe-button">SUBSCRIBE</button>
+<button class="join-button ">JOIN my chanel </button> 
+<button class="tweet-button">Tweet</button> 
+<!--nqs nuk venndosim  keshtu atehete the tweet button eshte poshte subscribe button -->
+
+<!-- --------- Lesson 3 ------------  >

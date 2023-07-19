@@ -1,0 +1,162 @@
+<!--Lesson 5-->
+<!--The other styles of every code I have writen in CSS-->
+
+<style>
+
+ .Talking-paragraph {
+    
+    /*
+    font-family: Arial; /*it is udes to change the style of the tex : the styles are the
+     same as in Word*/
+    /*font-size: 30px; /*for the sizo fo the text */
+    /*font-weight: bold; /*to make it bod the text*/
+    /*Per cdo cilesi te Yaz tipi ne Word e bejme research how to do it in CSS by 
+    researching it online  */
+    /*font-style: italic;
+    /*text-align: center;  */
+    /*?I dont know why ı have to use the comment code in every resht ?*/
+    /*?what happens when a code I coppy for a website doesnt have a style which is 
+    part of that erbsite? */
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 18px;
+    width:300px; /*ne paragr kur e perdorim kete kod ateher ben te mundur qe nje pjese 
+    e tekstit te kaloje ne rresht te 2te */
+     /*?Por nuk e kuptoj se si vepron ?*/
+    line-height: 24px; /*puts space btw the lines  */
+    /*?how  can I use margin to get the same result ?*/
+
+    margin-bottom: 2px;
+ }
+
+ .video-stats {
+    font-family: Arial;
+    font-size: 14px;
+    margin-top: 0; /*parpagraphs by defolt come with margin in top and botton-
+     prandaj mqs nuk duam margin in top atahere e venosim 0 px  - por kur 
+     vendosim 0 nuk ka nevoje te vendosim px .Por asyeja se pse 2 tekse te 
+    ndrshme nuk jane te ngjituar me nj-tj (psh the "3.4M views · 6 months ago" 
+    me "Marques Brownlee ✓" sps tek teksti me 3.4 bejme margin-botton= me nje 
+    nr px ne meyre qe dhe po te vendosim margin-top=0px te Marques text . )*/
+    margin-bottom: 16px;
+    color: #606060;
+    }
+
+   .channel-name {
+    font-family: Arial; /*?What defolt is for the type of text ?*/
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 16px;
+    color: #606060;
+ }   
+ .video-description {
+    font-family: Arial;
+    font-size: 14px;
+    color: #606060;
+    width:300px;
+    line-height: 20px;
+    margin-bottom: 0;
+}
+/*Way to clean up ower code : Mqs cdo paragraph ka te njeten font-family:Arial 
+atehere per me pak code writing bejme : 
+p{
+   font-family: Arial; - dhe si rrjedhoje ne cdo style od of every paragraf e bejme 
+   delete kete kod 
+   margin-top: 0; - e njeta logjike dhe per kete kod - ?po qe kjo kode nuk eshte ne "
+   .video-description" i bşe we aplikohet dh ene te ?
+   margin-botton : 0; -e njeta logjike dhe per kete kod
+Por ne kemi margin-bottn me vlera te ndryshme per style te disa paragraps - atehere 
+cila cod merret :
+ nuk ka lidhje se cili kod eshte shkruajtur me perpara 
+ dhe me mbrapa . Cka eshte e rendesishme eshte se nqs 
+ kemi nje class ne CSS for a specific paragraf atehere 
+ the code ne CSS ne kete specific parafrag aktivizohet 
+ dhe the code in genaral pragraf nqs eshte e kundert me 
+ the code in CSS of the specific paragraf atatehere the 
+ code of the CSS specific class aktivizohet dhe the code 
+ of the CSS of the general paragraf nuk aktivizohet. 
+}/
+
+/*How to put the backgroud of a paragraf :  */
+/*we don't do it as a button even though it will be esair since I 
+alerady know the code but the downside is that a button means you 
+click it and it does smth ndersa ne paragra jo */
+
+.apple-text {
+   font-family: Arial;
+   background-color: #e34140; /*to put backgrount color to the text and it becomes 
+   a ractangular through out all the webpage - it has the hight of the hight of the
+    talles letter. */
+    /*Per te zgjeruar the background color rectangular for the top and button and 
+    eshte njelloj sikurse e bejme dhe ne buttons : */
+    padding-top: 18px;
+    padding-bottom: 18px;
+    color: white;
+    text-align: center;
+    /*text-decoration: underline;/*-to underline a text- we get this n-by googleing : CSS text underlying */
+     */
+   }
+
+.shop-link{
+   color: red;
+}
+/*Now in span text element the same style code logis as in the buttons is used .E  njeta 
+logjike dhe me style for hovering over it */
+
+.shop-link1.shop-link1:hover {
+cursor:pointer;
+text-decoration: underline;
+
+}
+/*As we know in HTML and in CSS the HTML the spaces we put in betwin do not get  used .
+In order to put as much space btw words or letters atehere perdorim metoden me span dhe
+CSS te saj perdormim margin code. psh : */
+
+.BTW-line {
+   margin-left: 50px;
+}
+.BTW-line:hover{
+   margin-right: 50px;
+   cursor: pointer;
+}
+</style>
+
+<!--Lesoon 5 -->
+<p class="Talking-paragraph">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+<!--<p class="video-stats">3.4M views · 6 months ago</p> <!-- per te bere  kete : "·" ne 
+   html ose e bejme copy nga internet  ose perdorim : &#183 - cka e vendosim aty ku duam 
+   qe middle dot te jete "·"- cka e gjeme ne google dukere kerkuar "html  middle dot " . 
+   Pra: -->
+<p class="video-stats">3.4M views &#183; 6 months ago</p>
+<!--<p>Marques Brownlee ✓</p> <!--e njata logjike si me 2 codet me lart . Html of this"✓"
+    eshte &#10003; &#x2713; &check; . Kur e kerkojme ne google "html of check mark" ose 
+    "html of ✓" -->
+<!--Kur perdormim code or coment 2 here resht si me lart ne fund vendsim vetem nje si
+    kjo shenja pasi --> <!--jo 2 sps  e dyta del ne website -->
+<p class ="channel-name">Marques Brownlee  &check;</p>
+<p class="video-description">Talking tech and AI on the heels of Google I/O. 
+   Also a daily driver phone reveal from Google's CEO. Shoutout to Sundar!</p>
+<!--<p>Shop early for the best selection of holiday favourites. Shop now > </p> 
+kur  kemi shenjen me te madhe ose me te bg atehere kur e bejme
+    copy the HTML mund ta ngaterroje me cod pradaj e kerojme the HTML
+     form of shenjes se vg ose te madhe. PRA :  -->
+<p class="apple-text">Shop early for the best selection of holiday favourites. 
+   <span class="shop-link1"> Shop now &#62; </span> </p>
+
+
+<!--<p class="apple-banner">Shop early for the best selection of holiday favourites.
+    <span class="shop-link">Shop now &gt;</span></p> -->
+<!--Text elements - they  exist inside a line of text and then they modify(style) that 
+   part of the text  but in HTML dhe jo ne CSS ,so they're not modifying the whole thing.Example :-->
+   <p>Shop early for the <strong>best selection</strong> of holiday 
+      favourites. <u>Shop now > </u>  </p> <!--the "stong" code is a tex element  used to make the taxt in 
+         it bold and the "u" is a text element  used to undrline the text in it ->
+         <!-Now the tex elements above come with defolt with a specific style and if 
+      we want to give defferent styles(or syşe it ourselves ) to a part of a tex in a paragraft atehere 
+   span class dhe vendosim the text we want to style dhe shkojme ne CSS and we style it.
+Tani mund te vendosim class ne cdo text elemet por nqs duam qe the style of the text to
+change after we hover it atehere perodrim span . Pra : -->
+<p class="apple-banner">Shop early for the best selection of holiday favourites. 
+   <span class="shop-link">Shop now 1 &gt;</span> </p>
+<p>Space <span class="BTW-line">between</span>    words. </p>   
+
